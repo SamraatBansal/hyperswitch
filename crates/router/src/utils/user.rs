@@ -1,10 +1,13 @@
-use crate::{
-    core::errors::{UserResult, UserErrors}, routes::AppState, services::authentication::AuthToken,
-    types::domain::UserFromStorage,
-};
 use diesel_models::user_role::UserRole;
 use error_stack::ResultExt;
 use masking::Secret;
+
+use crate::{
+    core::errors::{UserErrors, UserResult},
+    routes::AppState,
+    services::authentication::AuthToken,
+    types::domain::UserFromStorage,
+};
 
 pub mod password;
 

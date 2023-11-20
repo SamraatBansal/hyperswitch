@@ -1,4 +1,3 @@
-use crate::utils::user as utils;
 use api_models::user as api;
 use diesel_models::enums::UserStatus;
 use masking::ExposeInterface;
@@ -6,6 +5,7 @@ use masking::ExposeInterface;
 use super::errors::{UserErrors, UserResponse};
 use crate::{
     consts::user as consts, routes::AppState, services::ApplicationResponse, types::domain,
+    utils::user as utils,
 };
 
 pub async fn signup(

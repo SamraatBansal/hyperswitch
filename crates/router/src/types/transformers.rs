@@ -179,6 +179,7 @@ impl ForeignTryFrom<api_enums::Connector> for common_enums::RoutableConnectors {
     fn foreign_try_from(from: api_enums::Connector) -> Result<Self, Self::Error> {
         Ok(match from {
             api_enums::Connector::Aci => Self::Aci,
+            api_enums::Connector::Nooni => Self::Nooni,
             api_enums::Connector::Adyen => Self::Adyen,
             api_enums::Connector::Airwallex => Self::Airwallex,
             api_enums::Connector::Authorizedotnet => Self::Authorizedotnet,

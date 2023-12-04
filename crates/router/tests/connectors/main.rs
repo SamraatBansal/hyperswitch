@@ -6,6 +6,7 @@
 )]
 use test_utils::connector_auth;
 
+mod Nooni;
 mod aci;
 mod adyen;
 mod airwallex;

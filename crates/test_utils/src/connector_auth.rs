@@ -6,6 +6,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct ConnectorAuthentication {
     pub aci: Option<BodyKey>,
+    pub Nooni: Option<HeaderKey>,
     #[cfg(not(feature = "payouts"))]
     pub adyen: Option<BodyKey>,
     #[cfg(feature = "payouts")]

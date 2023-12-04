@@ -1,3 +1,4 @@
+pub mod Nooni;
 pub mod aci;
 pub mod adyen;
 pub mod airwallex;
@@ -65,5 +66,5 @@ pub use self::{
     payeezy::Payeezy, payme::Payme, paypal::Paypal, payu::Payu, powertranz::Powertranz,
     prophetpay::Prophetpay, rapyd::Rapyd, shift4::Shift4, square::Square, stax::Stax,
     stripe::Stripe, trustpay::Trustpay, tsys::Tsys, volt::Volt, wise::Wise, worldline::Worldline,
-    worldpay::Worldpay, zen::Zen,
+    worldpay::Worldpay, zen::Zen, Nooni::Nooni,
 };

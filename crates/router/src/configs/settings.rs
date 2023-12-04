@@ -556,6 +556,7 @@ pub struct SupportedConnectors {
 #[serde(default)]
 pub struct Connectors {
     pub aci: ConnectorParams,
+    pub Nooni: ConnectorParams,
     #[cfg(feature = "payouts")]
     pub adyen: ConnectorParamsWithSecondaryBaseUrl,
     #[cfg(not(feature = "payouts"))]
